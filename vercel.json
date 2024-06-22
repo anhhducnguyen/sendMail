@@ -1,13 +1,13 @@
 {
     "builds": [{
-        "src": "geeksforgeeks/wsgi.py",
+        "src": "GFG---Django-Login-System-main/wsgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
     }],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "geeksforgeeks/wsgi.py"
+            "dest": "GFG---Django-Login-System-main/wsgi.py"
         }
     ]
 }
