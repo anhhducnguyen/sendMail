@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -32,7 +32,7 @@
         <button type="submit" class="btn btn-primary">Log In</button>
     </form>
 </body>
-</html>
+</html> -->
 
 
 
@@ -44,7 +44,7 @@
 
 
 
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -246,23 +246,28 @@
                 <h1>Welcome</h1>
                 <p>Please login to continue......</p>
             </div>
+            <!-- <form action="/storeLogin" method="POST" id="loginForm" class="login-form" autocomplete="off"> -->
             <form method="post" action="/signin" id="loginForm" class="login-form" autocomplete="off">
                 {% csrf_token %}
                 <div>
                     {% for message in messages %}
+                    <!-- <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert"> -->
                         <div class="success-message">
                             <strong>{{ message }}</strong>
                         </div>
+                    <!-- </div> -->
                     {% endfor %}
                 </div>
                 <div class="login-content">
                     <div class="form-item">
                         <label for="email">Enter Email</label>
+                        <!-- <input type="email" name="email" required placeholder="example@email.com"> -->
                         <input type="text" class="form-control" id="username" name="username" placeholder="Enter Your Username" Required>
                     </div>
                     <div class="form-item">
                         <label for="password">Enter Password</label>
                         <label for="text"></label>
+                        <!-- <input type="password" name="password" id="password" placeholder="Enter your Password" required class="pass-key"> -->
                         <input type="password" class="form-control" id="pass1" name="pass1" placeholder="Enter Your Password" required class="pass-key">  
                     </div>
                     <div class="form-item">
@@ -311,4 +316,18 @@
     </div>
 </body>
 
-</html> -->
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<
